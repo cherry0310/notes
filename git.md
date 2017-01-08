@@ -7,6 +7,10 @@
 
 切换到主分支
 
+> git push --set-upstream origin develop
+
+将本地的分支关联到远程中的develop分支，这样就可以直接git push了
+
 > git merge --no-ff develop
 
 把develop分支上的修改合并到主分支
@@ -38,3 +42,7 @@
 > git push
 
 将本地分支更新推送到远程主机
+
+> git diff
+
+查看版本之间的变动
