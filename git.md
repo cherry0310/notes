@@ -46,3 +46,13 @@
 > git diff
 
 查看版本之间的变动
+
+> git branch
+
+> git branch -a
+
+查看本地分支/查看所有分支
+
+> git push origin --delete cherry0310-patch-1
+
+删除远程分支
