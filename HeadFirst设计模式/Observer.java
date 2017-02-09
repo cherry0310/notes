@@ -61,7 +61,7 @@ public class CurrentConditionDisplay implements Observer{
     private float humidity;
     private Subject weatherData;
 
-    public CurrentConditionDisplay(WeatherData wd){
+    public CurrentConditionDisplay(Subject wd){
         this.weatherData = wd;
         wd.registerObserver(this);
     }
