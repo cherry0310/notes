@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title></title> 
+<meta name="renderer" content="webkit"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<meta name="keyword" content="">
+<meta name="description" content=""> 
+<style type="text/css">
+body{font-family:Arial,"Microsoft Yahei";}
+p,hr{margin:0;}
+h3{margin-top:50px;}
+.demo{width:520px;height:180px;border:1px solid #00f;}
+.demo p,.demo div{border:2px solid #f00;}
+.demo span,.demo input,.demo a{border:2px solid #07b307;}
+.demo .change{display:inline-block;border:2px solid #ffd700;}
+
+.demo2 p{width:250px;height:50px;}
+.demo2 span{width:250px;height:50px;}
+
+.demo3{width:600px;height:220px;}
+.demo3 div{margin:10px;}
+.demo3 span{margin:10px;}
+
+.demo4{height:250px;}
+.demo4 div{padding:10px;}
+.demo4 span,.demo4 a{padding:10px;background:#dedede;}
+
+.demo5 div{display:inline;}
+.demo5 span{display:block;}
+</style>
+</head> 
+<body> 
+<h1>css display属性</h1>
+<p>注：红色边框表示块级元素、绿色边框表示内联元素、黄色边框表示内联块状元素</p>
+<h3>示例1：block元素独占一行；inline、inline-block元素不独占一行</h3>
+<div class="demo demo1">
+	<p>块元素1：p</p>
+	<div>块元素2：div</div>
+	<span>内联元素1：span</span>
+	<input type="text" placeholder="内联元素2：input"></input>
+	<a href="#">内联元素3：a</a>	
+	<span>内联元素4：span</span>
+	<span class="change">转变为内联块状元素的span</span>
+	<input class="change" type="text" placeholder="转变为内联块状元素的input"></input>
+	<a href="#" class="change">转变为内联块状元素的a</a>	
+	<div class="change">转变为内联块状元素的div</div>
+</div>
+
+<h3>示例2：block、inline-block元素可以设置宽高；inline元素设置宽高无效</h3>
+<div class="demo demo2">
+	<p>块元素p设置宽300px高50px（有效）</p>
+	<span>内联元素span设置宽300px高50px（无效）</span>
+	<p class="change">转变为内联块状元素的p设置宽300px高50px（有效）</p>
+</div>
+
+<h3>示例3：block、inline-block元素margin的4个方向值均有效，inline元素只有margin-left、margin-right有效</h3>
+<div class="demo demo3">
+	<span>内联元素span设置margin:10px;（只有左右的10px有效）</span>
+	<span>内联元素span设置margin:10px;（只有左右的10px有效）</span>
+	<div>块元素div设置margin:10px;</div>
+	<div class="change">内联块状元素设置margin:10px;</div>
+	<div class="change">内联块状元素设置margin:10px;</div>
+	<div class="change">内联块状元素设置margin:10px;</div>
+</div>
+
+<h3>示例4：block、inline-block元素padding的4个方向值均有效，inline元素只有padding-left、padding-right有效,竖直方向是撑不开的</h3>
+<div class="demo demo4">
+	<a>内联元素a设置padding:10px;</a>
+	<div>块元素div设置padding:10px;</div>
+	<span>内联元素span设置padding:10px;</span>
+	<div>块元素div设置padding:10px;</div>
+	<div class="change">内联块状元素设置padding:10px;</div>
+	<div>块元素div设置padding:10px;</div>
+</div>
+
+<h3>示例5：应用display转换元素类型</h3>
+<div class="demo demo5">
+	<div>块级元素div转为内联元素</div>
+	<div>块级元素div转为内联元素</div>
+	<div>块级元素div转为内联元素</div>
+	<div>块级元素div转为内联元素</div>
+	<span>内联元素span转为块级元素</span>
+	<span>内联元素span转为块级元素</span>
+	<span>内联元素span转为块级元素</span>
+	<div class="change">块级元素div转为内联块状元素</div>
+	<span class="change">内联元素span转为内联块状元素</span>
+	<span class="change">内联元素span转为内联块状元素</span>
+</div>
+</body> 
+</html>
