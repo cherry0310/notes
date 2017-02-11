@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title></title> 
+<meta name="renderer" content="webkit"> 
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"> 
+<meta name="keyword" content="">
+<meta name="description" content=""> 
+<style type="text/css">
+body{font-family:Arial,"Microsoft Yahei";}
+pre{font-size:14px;}
+h3{margin-top:50px;}
+.demo1{text-align:center;width:800px;height:100px;border:1px solid blue;}
+.demo1 input{width:500px;}
+.demo1 p{width:600px;border:1px solid red;}
+
+.demo2{width:800px;height:100px;border:1px solid blue;}
+.demo2 p{margin:0 auto;width:400px;border:1px solid red;}
+.demo2 input{margin:0 auto;width:500px;}
+
+.demo3{position:relative;width:600px;height:100px;border:1px solid blue;}
+.demo3 div{position:absolute;left:50%;margin-left:-200px;width:400px;border:1px solid red;}
+
+.demo4{position:relative;width:600px;height:100px;border:1px solid blue;}
+.demo4 div{position:absolute;left:0;right:0;margin:auto;width:400px;border:1px solid red;}
+
+.parent{overflow:hidden;width:600px;height:100px;border:1px solid blue;}
+.parent .wrapper{position:relative;float:left;left:50%;}
+.parent .child{position:relative;left:-50%;border:1px solid red;}
+
+.demo6{width:600px;height:100px;border:1px solid blue;}
+.demo6 div{width:500px;height:40px;line-height:40px;border:1px solid red;font-size:14px;}
+
+.demo7{width:600px;height:160px;line-height:160px;border:1px solid blue;}
+.demo7 img{width:100px;border:1px solid red;vertical-align:middle;}
+
+.demo8{position:relative;width:600px;height:160px;border:1px solid blue;}
+.demo8 img{position:absolute;top:50%;margin-top:-50px;height:100px;width:100px;border:1px solid red;}
+
+.demo9{position:relative;width:600px;height:160px;border:1px solid blue;}
+.demo9 img{position:absolute;top:0;bottom:0;margin:auto;height:100px;width:100px;border:1px solid red;}
+
+table{width:300px;border:1px solid #333;border-collapse:collapse;border-spacing:0;}
+table td,th{height:30px;border:1px solid #333;}
+
+.demo11{display:table-cell;text-align:center;vertical-align:middle;width:600px;height:200px;border:1px solid blue;}
+.demo11 .box{display:inline-block;width:100px;height:100px;background:red;}
+.demo11 img{width:100px;height:100px;}
+
+.demo12{position:relative;width:600px;height:200px;border:1px solid blue;}
+.demo12 .box{width:100px;height:100px;background:red;position:absolute;top:50%;left:50%;}
+.demo12 .box{
+	-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+}
+</style>
+</head> 
+<body> 
+<h1>水平居中</h1>
+<h3>示例1：text-align方法</h3>
+<div class="demo1">
+	这行文字是div下的直接文本元素，会相对于div居中显示<br/>
+	<input type="text" placeholder="这是div下的直接内联元素，会相对于div居中显示"></input>
+	<p>这行文字是div下的块级元素p内的文本，它会相对于p元素居中显示</p>
+</div>
+
+<h3>示例2：margin:0 auto方法</h3>
+<div class="demo2">
+	<p>块级元素p设置了宽度并且设置了margin:0 auto之后会相对于父元素水平居中</p>
+	<input type="text" placeholder="内联元素设置了margin:0 auto之后无效果"></input>
+</div>
+
+<h3>示例3：绝对定位水平居中方法一</h3>
+<div class="demo3">
+	<div>div设置了position:absolute;left:50%;margin-left:-200px;width:400px;后相对于父元素水平居中</div>
+</div>
+
+<h3>示例4：绝对定位水平居中方法二</h3>
+<div class="demo4">
+	<div>div设置了position:absolute;left:0;right:0;margin:auto;后相对于父元素水平居中</div>
+</div>
+
+<h3>示例5：浮动配合相对定位</h3>
+<div class="parent">
+	<div class="wrapper">
+		<div class="child">123456789123456789</div>
+	</div>
+</div>
+
+<h1>垂直居中</h1>
+<h3>示例6：line-height方法</h3>
+<div class="demo6">
+	<div>div的height和line-height的值均为40px,此时p内文本垂直居中。</div>
+</div>
+
+<h3>示例7：vertical-align:middle方法</h3>
+<div class="demo7">
+	<img src="http://img2.ciurl.cn/flashsale/upload/comdpic/20141104/org/1415073144_2798.jpg_a_400x400" />
+</div>
+
+<h3>示例8：绝对定位垂直居中方法一</h3>
+<div class="demo8">
+	<img src="http://img2.ciurl.cn/flashsale/upload/comdpic/20141104/org/1415073144_2798.jpg_a_400x400" />
+</div>
+
+<h3>示例9：绝对定位垂直居中方法二</h3>
+<div class="demo9">
+	<img src="http://img2.ciurl.cn/flashsale/upload/comdpic/20141104/org/1415073144_2798.jpg_a_400x400" />
+</div>
+
+<h3>示例10：表格中的居中</h3>
+<table>
+	<tr>
+		<th >商品名称</th>
+		<th>本月销售额</th>
+	</tr>
+	<tr>
+		<td align="center" valign="middle">商品1</td>
+		<td>￥3000</td>
+	</tr>
+	<tr>
+		<td>商品2</td>
+		<td>￥4000</td>
+	</tr>
+	<tr>
+		<td>商品3</td>
+		<td>￥5000</td>
+	</tr>
+	<tr>
+		<td>商品4</td>
+		<td>￥6000</td>
+	</tr>
+</table>
+
+<h3>示例11：表格居中的扩展</h3>
+<div class="demo11">
+	<div class="box"></div>
+</div>
+<div class="demo11">
+	<img src="http://img2.ciurl.cn/flashsale/upload/comdpic/20141104/org/1415073144_2798.jpg_a_400x400" />
+</div>
+
+<h3>示例12：translate绝对居中</h3>
+<div class="demo12">
+	<div class="box"></div>
+</div>
+
+</body> 
+</html>
