@@ -1,5 +1,5 @@
 /*
- *迭代器模式
+ *迭代器模式定义
  *提供一种方法顺序访问集合中的各个元素，而又不暴露其内部实现
  *interface Iterator(hasNext() next())
  *concrete Iterator

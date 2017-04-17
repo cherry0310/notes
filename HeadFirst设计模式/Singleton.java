@@ -3,7 +3,8 @@
  *一个类只有一个实例变量，并提供全局的访问点
  */
  public class Singleton{
-     private static singleton;
+     private static Singleton singleton;
+     private Singleton(){}
 
      public static Singleton getInstance(){
          if(singleton == null){

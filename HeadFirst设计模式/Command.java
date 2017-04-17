@@ -33,7 +33,6 @@ public class GarageDoorOpenCommand implements Command{
 //遥控器类
 public class SimpleRemoteControl{
     Command command;
-    public SimpleRemoteControl(){}
 
     public void setCommand(Command command){
         this.command = command;

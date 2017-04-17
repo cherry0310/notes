@@ -55,7 +55,7 @@ public class WeatherData implements Subject{
 public interface Observer{
     public void update(float t, float h, float p);
 }
-//观察者1号--当前状况布告板
+//观察者1号-当前状况布告板
 public class CurrentConditionDisplay implements Observer{
     private float temperature;
     private float humidity;
@@ -76,7 +76,7 @@ public class CurrentConditionDisplay implements Observer{
         System.out.println("当前天气状况是：温度：" + temperature + ";湿度：" + humidity);
     }
 }
-//观察者2号--天气预报布告板
+//观察者2号-天气预报布告板
 public class ForecastDisplay{
     private float temperature;
     private float humidity;
