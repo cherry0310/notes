@@ -38,7 +38,7 @@ public class QuackMethodB implements QuackBehavior {
 
 
 //鸭子类
-public abstract Duck{
+public abstract class Duck{
 	FlyBehavior fb;
 	QuackBehavior qb;
 
@@ -52,7 +52,7 @@ public abstract Duck{
 	}
 
 	public void performQuack(){
-		qb.fly();
+		qb.quack();
 	}
 
 	//所有鸭子都会游泳
@@ -98,15 +98,3 @@ public class Test{
 		duck.performQuack(); //输出：叫方法A
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-

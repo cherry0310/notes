@@ -56,7 +56,7 @@ public class Test{
         Turkey turkey = new WildTurkey();
         turkey.gobble();
         turkey.fly();
-        TurkeyAdapter ta = new TurkeyAdapter(turkey);
+        Duck ta = new TurkeyAdapter(turkey);
         ta.quack();
         ta.fly();
     }
